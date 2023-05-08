@@ -1,0 +1,16 @@
+{
+    "name": "johnnoel/japan-2023-infographic",
+    "description": "My Japan 2023 trip infographic",
+    "type": "project",
+    "require": {
+        "php": "^8.0",
+        "guzzlehttp/guzzle": "^7.5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "John Noel",
+            "email": "chaostangent@gmail.com"
+        }
+    ]
+}
