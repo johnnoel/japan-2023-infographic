@@ -1,15 +1,15 @@
 <?php
 
-$fh = fopen(__DIR__ . '/exchange-rates.csv', 'r');
+$fh = fopen(__DIR__ . '/photos.csv', 'r');
 $json = [];
 
 while (!feof($fh)) {
-    [ $date, $er ] = fgetcsv($fh, 1024);
+    [ $date, $photos ] = fgetcsv($fh, 1024);
     if ($date === null) {
         continue;
     }
 
-    $json[] = [ 'date' => $date, 'rate' => $er ];
+    $json[] = [ 'date' => $date, 'photos' => intval($photos) ];
 }
 
 echo json_encode($json);

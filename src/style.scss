@@ -1,0 +1,104 @@
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  background: #1c1c1a;
+  color: rgba(255, 255, 254, .92);
+}
+
+h1, h2 {
+  margin: 0;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  line-height: 1;
+}
+
+h1 {
+  margin: 0 0 20px;
+}
+
+h2 {
+  color: rgba(255, 252, 236, .391);
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0 0 20px;
+}
+
+main {
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(6, 116.66px);
+  gap: 20px;
+}
+
+iframe {
+  border: none;
+}
+
+div {
+  background: #232320;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+abbr {
+  border: none;
+  text-decoration: none;
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.chart {
+  grid-column: 1 / span 6;
+}
+
+.num {
+  grid-column-end: span 3;
+
+  span {
+    font-size: 78px;
+    font-weight: 700;
+    line-height: 1;
+  }
+}
+
+.num-narrow {
+  grid-column-end: span 2;
+
+  h2 {
+    margin: 0 0 10px;
+  }
+
+  span {
+    font-size: 56px;
+    font-weight: 700;
+  }
+}
+
+.num-small {
+  grid-column-end: span 3;
+  display: flex;
+  flex-flow: row wrap;
+  padding-bottom: 0;
+
+  div {
+    padding: 0 0 10px;
+    flex: 1 0 50%;
+  }
+
+  h2 {
+    font-size: 14px;
+    margin: 0 0 5px;
+  }
+
+  span {
+    font-size: 32px;
+    font-weight: 700;
+  }
+}
