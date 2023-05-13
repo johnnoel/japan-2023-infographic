@@ -62,9 +62,17 @@ abbr {
   grid-column-end: span 3;
 
   span {
+    display: block;
     font-size: 78px;
     font-weight: 700;
     line-height: 1;
+  }
+
+  small {
+    display: block;
+    color: rgba(255, 252, 236, .691);
+    font-size: 18px;
+    margin: 10px 0 0;
   }
 }
 

@@ -1,15 +1,15 @@
 <?php
 
-$fh = fopen(__DIR__ . '/photos.csv', 'r');
+$fh = fopen(__DIR__ . '/photo-sizes.csv', 'r');
 $json = [];
 
 while (!feof($fh)) {
-    [ $date, $photos ] = fgetcsv($fh, 1024);
+    [ $date, $size ] = fgetcsv($fh, 1024);
     if ($date === null) {
         continue;
     }
 
-    $json[] = [ 'date' => $date, 'photos' => intval($photos) ];
+    $json[] = [ 'date' => $date, 'size' => intval(str_replace(',', '', $size)) ];
 }
 
 echo json_encode($json);
