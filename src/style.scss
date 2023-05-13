@@ -1,3 +1,5 @@
+@import "~tiny-slider/src/tiny-slider.scss";
+
 body {
   font-family: 'IBM Plex Sans', sans-serif;
   background: #1c1c1a;
@@ -32,7 +34,7 @@ iframe {
   border: none;
 }
 
-div {
+.num, .chart {
   background: #232320;
   border: none;
   border-radius: 8px;
@@ -56,6 +58,7 @@ abbr {
 
 .chart {
   grid-column: 1 / span 6;
+  position: relative;
 }
 
 .num {
@@ -109,4 +112,14 @@ abbr {
     font-size: 32px;
     font-weight: 700;
   }
+}
+
+.favourite-photos-title {
+  margin-bottom: 0;
+}
+
+.tns-controls {
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
